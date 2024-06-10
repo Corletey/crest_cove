@@ -3,133 +3,448 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cusine</title>
+    <title>Crest Cove</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat&family=Poppins:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/swiper.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
+
   <body>
-        <nav>
+    <nav>
+      <img
+        src="./assets/logos/crest-cove-high-resolution-logo.png"
+        alt="crest cove"
+        id="logo"
+      />
+      <div id="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Reservation</a>
+        <a href="#">Gallery</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+    <section id="hero">
+      <div id="hero-overlay">
+        <header>
+          <span id="subtext-1" class="courgette-regular">Welcome to</span>
+          <span id="subtext-2" class="poppins-bold">Crest Cove</span>
+        </header>
+        <button class="menubutton">Look Menu</button>
+      </div>
+    </section>
+    <section id="about">
+      <div id="about-header">
+        <div class="sub-header">
+          <span class="about-subtitle"> SeaFood Restaurant</span>
+          <span class="about-title">Welcome</span>
+        </div>
+        <p id="about-p">
+          At Crest Cove, enjoy the freshest seafood dishes <br>
+          with a stunning seaside view.
+        </p>
+        <div id="about-link">
+          <span>Our Story</span>
+          <span class="icon-arrow">→</span>
+        </div>
+      </div>
+      <img class="image-container"
+        src="./assets/images/sal1.jpg"
+        alt="smoked salmon"
+        id="about-img"
+      />
+    </section>
+    <section id="discover">
+      <div id="discover-header">
+        <div class="dissub-header">
+          <span class="discover-subtitle">Discover</span>
+          <span class="discover-title">the crest cove </span>
+        </div>
+      </div>
+    </section>
+    <section class="features">
+      <div class="sub-header">
+        <span class="features-subtitle">Discover</span>
+        <span class="features-title">Our Features</span>
+      </div>
+      <div class="flex-container">
+        <div class="feature">
+          <div class="feature-img">
             <img
-                src="./assets/logos/logo-no-background.png"
-                alt="cusine logo"
-                id="logo"
+              src="./assets/images/rom2.jpg"
+              alt="Romantic Restaurant" id="feature-pic"
             />
-            <div id="nav-links">
-                <a href="#">Home</a>
-                <a href="#">Menu</a>
-                <a href="#">Reservation</a>
-                <a href="#">Gallery</a>
-                <a href="#">About</a>
-                <a href="#">Blog</a>
-                <a href="#">Contact</a>
+          </div>
+          <div class="feature-content">
+            <h3>ROMANTIC RESTAURANT</h3>
+            <p>
+              Phasellus lorem enim, luctus ut velit eget, con-vallis egestas
+              eros.
+            </p>
+            <a href="#" class="btn"
+              >LEARN MORE <span class="icon-arrow">→</span></a
+            >
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-img">
+            <img src="./assets/images/sal2.jpg" alt="Delicious Food" id="feature-pic"/>
+          </div>
+          <div class="feature-content">
+            <h3>DELICIOUS FOOD</h3>
+            <p>
+              Aliquam eget aliquam magna, posuere risus justo ipsum nibh
+              urna.
+            </p>
+            <a href="#" class="btn"
+              >LEARN MORE <span class="icon-arrow">→</span></a
+            >
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-img">
+            <img src="./assets/images/discover2.jpg" alt="Red Wines" id="feature-pic"/>
+          </div>
+          <div class="feature-content">
+            <h3>RED WINES YOU LOVE</h3>
+            <p>
+              Sed ornare ligula eget tortor tempor, quis porta tellus dictum.
+            </p>
+            <a href="#" class="btn"
+              >LEARN MORE <span class="icon-arrow">→</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="menu-button">
+      <div class="sub-header">
+          <span class="about-subtitle">Discover</span>
+          <span class="about-title">Our Menu</span>
+      </div>
+      <div class="grid-container">
+          <div class="group1">
+              <img src="./assets/images/sus2.jpg" alt="lunch">
+              <div class="overlay">
+                  <a href="#" class="overlay-link" class="s.9">Lunch</a>
+              </div>
+          </div>
+          <div class="group1">
+              <img src="./assets/images/dinnerimg1.jpg" alt="Dinner">
+              <div class="overlay">
+                  <a href="#" class="overlay-link">dinner</a>
+              </div>
+          </div>
+          <div class="group3">
+              <img src="./assets/images/drinks2.jpg" alt="Drink">
+              <div class="overlay">
+                  <a href="#" class="overlay-link">Drink</a>
+              </div>
+          </div>
+          <div class="group3">
+              <img src="./assets/images/starters2.jpg" alt="staters">
+              <div class="overlay">
+                  <a href="#" class="overlay-link">Starters</a>
+              </div>
+          </div>
+          <div class="group2">
+              <img src="./assets/images/happy2.jpg" alt="happy hour">
+              <div class="overlay">
+                  <a href="#" class="overlay-link">Happy Hour</a>
+              </div>
+          </div>
+          <div class="group3">
+              <img src="./assets/images/dessert2.jpg" alt="Dessert">
+              <div class="overlay">
+                  <a href="#" class="overlay-link">Dessert</a>
+              </div>
+              
+          </div>
+      </div>
+  </section>
+    <section id="video-sec">
+      <video id="video" autoplay muted loop>
+        <source src="./assets/videos/vid1.mp4" type="video/mp4" />
+      </video>
+      <div id="video-overlay">
+        <div class="discover-subtitle">
+          <span id="subtext-1">Discover</span>
+          <!-- <span id="subtext-2">Our Video</span> -->
+        </div>
+        <span class="icon-arrow">→</span>
+      </div>
+    </section>
+    <section id="reservation">
+      <div id="section1">
+        <div class="subheader">
+          <span id="reservation-subtitle">Reservation</span>
+          <span id="reservation-title">Book Table</span>
+        </div>
+
+        <form>
+          <div id="input-grid">
+            <span class="form-item">
+              <label for="date">Date</label>
+              <input type="date" id="date" />
+            </span>
+            <span class="form-item">
+              <label for="name">Name</label>
+              <input type="name" id="text" />
+            </span>
+            <span class="form-item">
+              <label for="date">Date</label>
+              <input type="date" id="date" />
+            </span>
+            <span class="form-item">
+              <label for="date">Date</label>
+              <input type="date" id="date" />
+            </span>
+            <span class="form-item">
+              <label for="date">Date</label>
+              <input type="date" id="date" />
+            </span>
+            <span class="form-item">
+              <label for="date">Date</label>
+              <input type="date" id="date" />
+            </span>
+          </div>
+          <div id="rev-btn">
+            <button>Book Table</button>
+          </div>
+        </form>
+      </div>
+      <img
+        id="reservation-img"
+        src="./assets/images/happy1.jpg"
+        alt="reservation image"
+      />
+    </section>
+    <section class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div>
+            <span id="custsay">Customers Say</span>
+            <h3>Review</h3>
+          </div>
+          <img src="./assets/images/dessert2.jpg" alt="Avatar" class="avatar" />
+          <div class="review">
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+              Aliquam, illo sit. Architecto, aliquid!
+            </p>
+            <br />
+            <p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div>
+            <span id="custsay">Customers Say</span>
+            <h3>Review</h3>
+          </div>
+          <img src="./assets/images/dessert2.jpg" alt="Avatar" class="avatar" />
+          <div class="review">
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+              Aliquam, illo sit. Architecto, aliquid!
+            </p>
+            <br />
+            <p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div>
+            <span id="custsay">Customers Say</span>
+            <h3>Review</h3>
+          </div>
+          <img src="./assets/images/dessert2.jpg" alt="Avatar" class="avatar" />
+          <div class="review">
+            <br />
+            <p>
+              <br /><br /><br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+              Aliquam, illo sit. Architecto, aliquid!
+            </p>
+            <p>
+              <i class=></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </section>
+    <section class="features">
+      <div class="sub-header">
+        <span class="features-subtitle">Discover</span>
+        <span class="features-title">Our Features</span>
+      </div>
+      <div class="flex-container">
+        <div class="feature">
+          <div class="feature-img">
+            <img
+              src="./assets/images/discover2.jpg"
+              alt="Romantic Restaurant"
+            />
+          </div>
+          <div class="feature-content">
+            <h3>ROMANTIC RESTAURANT</h3>
+            <p>
+              Phasellus lorem enim, luctus ut velit eget, con-vallis egestas
+              eros.
+            </p>
+            <a href="#" class="btn"
+              >LEARN MORE <span class="icon-arrow">→</span></a
+            >
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-img">
+            <img src="./assets/images/discover2.jpg" alt="Delicious Food" />
+          </div>
+          <div class="feature-content">
+            <h3>DELICIOUS FOOD</h3>
+            <p>
+              Aliquam eget aliquam magna, quis posuere risus ac justo ipsum nibh
+              urna.
+            </p>
+            <a href="#" class="btn"
+              >LEARN MORE <span class="icon-arrow">→</span></a
+            >
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-img">
+            <img src="./assets/images/discover2.jpg" alt="Red Wines" />
+          </div>
+          <div class="feature-content">
+            <h3>RED WINES YOU LOVE</h3>
+            <p>
+              Sed ornare ligula eget tortor tempor, quis porta tellus dictum.
+            </p>
+            <a href="#" class="btn"
+              >LEARN MORE <span class="icon-arrow">→</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg1">
+      <div class="main-container">
+        <div class="container2">
+          <div class="contact-section">
+            <h4 class="contact">Contact Us</h4>
+            <ul>
+              <li class="contlist">
+                <i
+                  class="fa fa-map-marker fs-16 dis-inline-block size19"
+                  aria-hidden="true"
+                ></i>
+                8th floor, 379 Hudson St, New York, NY 10018
+              </li>
+              <li class="contlist">
+                <i
+                  class="fa fa-phone fs-16 dis-inline-block size19"
+                  aria-hidden="true"
+                ></i>
+                (+1) 96 716 6879
+              </li>
+              <li class="contlist">
+                <i
+                  class="fa fa-envelope fs-13 dis-inline-block size19"
+                  aria-hidden="true"
+                ></i>
+                contact@site.com
+              </li>
+            </ul>
+            <h4 class="contact">Opening Times</h4>
+            <ul>
+              <li class="contlist">09:30 AM – 11:00 PM</li>
+              <li class="contlist">Every Day</li>
+            </ul>
+          </div>
+          <div class="latest-twitter-section">
+            <h4 class="contact">Latest Twitter</h4>
+            <div>
+              <span class="tweet">
+                <i class="fa fa-twitter"></i>
+              </span>
+              <a href="#" class="contlist">@colorlib</a>
+              <p class="contlist">
+                Activello is a good option. It has a slider built into that
+                displays the featured image in the slider.
+                <a href="#">https://buff.ly/2zaSfAQ</a>
+              </p>
+              <span class="tweet">21 Dec 2024</span>
             </div>
-        </nav>
-        <section id="hero">
-            <div id="hero-overlay">
-                <header>
-                <span id="subtext-1" class="courgette-regular">Welcome to</span>
-                <span id="subtext-2" class="poppins-bold">CUSINE PALACE</span>
-                </header>
-                <button class="menubutton">Look Menu</button>
+            <div>
+              <span class="tweet">
+                <i class="fa fa-twitter"></i>
+              </span>
+              <a href="#" class="contlist">@colorlib</a>
+              <p class="contlist">
+                Activello is a good option. It has a slider built into that
+                displays the featured image in the slider.
+                <a href="#">https://buff.ly/2zaSfAQ</a>
+              </p>
+              <span class="tweet">21 Dec 2024</span>
             </div>
-        </section>
-        <section id="about">
-            <div id="about-header">
-                <div class="sub-header">
-                    <span class="about-subtitle"> Italian Restaurant</span>
-                    <span class="about-title">Welcome</span>
-                </div>
-                <p id="about-p">Donec quis lorem nulla. Nunc eu hate me. Morbi nec lobortis est.<br>
-                     Sed fringilla, nunc sed imperdiet lacinia, nisl ante egestas mi,
-                      ac <br> facilesis ligula sem id neque.
-                </p>
-                <div id="about-link">
-                    <span>Our Story</span>
-                    <span>icon</span>
-                </div>
+          </div>
+          <div class="gallery-section">
+            <h4 class="contact">Gallery</h4>
+            <div class="grid">
+              <img src="./assets/images/lunchimg.jpg" alt="GALLERY" />
+              <img src="./assets/images/lunchimg.jpg" alt="GALLERY" />
+              <img src="./assets/images/lunchimg.jpg" alt="GALLERY" />
+              <img src="./assets/images/lunchimg.jpg" alt="GALLERY" />
+              <img src="./assets/images/lunchimg.jpg" alt="GALLERY" />
+              <img src="./assets/images/lunchimg.jpg" alt="GALLERY" />
+              <img src="./assets/images/lunchimg.jpg" alt="GALLERY" />
+              <img src="./assets/images/lunchimg.jpg" alt="GALLERY" />
+              <img src="./assets/images/lunchimg.jpg" alt="GALLERY" />
+              <img src="./assets/images/lunchimg.jpg" alt="GALLERY" />
+              <img src="./assets/images/lunchimg.jpg" alt="GALLERY" />
+              <img src="./assets/images/lunchimg.jpg" alt="GALLERY" />
             </div>
-            <img src="./assets/images/about.jpg" alt="fries & ribs" id="about-img">
-        </section>
-        <section id="discover">
-            <div id="discover-header">
-                <div class="dissub-header">
-                    <span class="discover-subtitle">Discover</span>                 
-                    <span class="discover-title">the crest cove
-                    </span>
-                </div>
-            </div>
-        </section>    
-        <section class="features">
-            <div class="sub-header">
-                <span class="features-subtitle">Discover</span>
-                <span class="features-title">Our Features</span>
-            </div>
-            <div class="flex-container">
-                <div class="feature">
-                    <div class="feature-img">
-                        <img src="./assets/images/discover2.jpg" alt="Romantic Restaurant">
-                    </div>
-                    <div class="feature-content">
-                        <h3>ROMANTIC RESTAURANT</h3>
-                        <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
-                        <a href="#">LEARN MORE</a>
-                        <span class="icon-arrow">→</span>
-                    </div>
-                </div>
-                <div class="feature">
-                    <div class="feature-img">
-                        <img src="./assets/images/discover2.jpg" alt="Delicious Food">
-                    </div>
-                    <div class="feature-content">
-                        <h3>DELICIOUS FOOD</h3>
-                        <p>Aliquam eget aliquam magna, quis posuere risus ac justo ipsum nibh urna.</p>
-                        <a href="#">LEARN MORE</a>
-                        <span class="icon-arrow">→</span>
-                    </div>
-                </div>
-                <div class="feature">
-                    <div class="feature-img">
-                        <img src="./assets/images/discover2.jpg" alt="Red Wines">
-                    </div>
-                    <div class="feature-content">
-                        <h3>RED WINES YOU LOVE</h3>
-                        <p>Sed ornare ligula eget tortor tempor, quis porta tellus dictum.</p>
-                        <a href="#">LEARN MORE</a>
-                        <span class="icon-arrow">→</span>
-                    </div>
-                </div>
-            </div>
-        </section>       
-        <section id="menu">
-            <div class="sub-header">
-                <span class="courgette-regular">Discover</span>
-                <span class="poppins-bold">Our Menu</span>
-            </div>
-            <div class="grid-container">
-                <div class="grid-item group1">
-                    <img src="./assets/images/lunchimg.jpg" alt="happy">
-                </div>
-                <div class="grid-item group1">
-                    <img src="./assets/images/dinnerimg1.jpg" alt="dinner">
-                </div>
-                <div class="grid-item group3">
-                    <img src="./assets/images/drinks1.jpg" alt="happy">
-                </div>
-                <div class="grid-item group3">
-                    <img src="./assets/images/starters2.jpg" alt="drink">
-                </div>
-                <div class="grid-item group2">
-                    <img src="./assets/images/happy2.jpg" alt="lunch">
-                </div>
-                <div class="grid-item group3">
-                    <img src="./assets/images/dessert3.jpg" alt="dessert">
-                </div>
-            </div>
-        </section>        
-        <section>Review</section>
-        <section>Footer</section>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
